@@ -1,2 +1,2 @@
 # Deploy Directo (Heroku)
-[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/YamaTsukami001/directcalend)
+[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/galo36/uci-uclv)
