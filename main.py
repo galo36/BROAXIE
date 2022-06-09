@@ -227,10 +227,10 @@ def onmessage(update,bot:ObigramClient):
     try:
         thread = bot.this_thread
         username = update.message.sender.username
-        tl_admin_user = os.environ.get('DAMIANBZM')
+        tl_admin_user = os.environ.get('BettyB96')
 
         #set in debug
-        tl_admin_user = 'DAMIANBZM'
+        tl_admin_user = 'BettyB96'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -248,10 +248,10 @@ def onmessage(update,bot:ObigramClient):
                 user_info = jdb.get_user(username)
                 jdb.save()
         else:
-            mensaje = "❌No tienes Acceso❌.\nPor favor Contacta con mi Programador @Yama_Tsukami\n"
+            mensaje = "❌No tienes Acceso❌.\nPor favor Contacta con mi Dueña @BettyB96\n"
             intento_msg = "💢El usuario @"+username+ " ha intentando usar el bot sin permiso💢"
             bot.sendMessage(update.message.chat.id,mensaje)
-            bot.sendMessage(2040050486,intento_msg)
+            bot.sendMessage(1229493438,intento_msg)
             return
 
 
@@ -500,7 +500,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = '💻Bot: UltraFast CalendarLink \n'
-            start_msg+= '📭Desarrollador: @Yama_Tsukami\n'
+            start_msg+= '📭Propietaria: @BettyB96\n'
             start_msg+= '📌Estoy listo para escuchar Links\n'
             start_msg+= '🚨Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
@@ -615,9 +615,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 16923599
-            #    api_hash = 'f69ab9f221ce44a4f0541e6f4624f431'
-            #    bot_token = '5312605097:AAElR2O-3wykmjPgChgpkXTgmAQDlQVE0J4'
+            #    api_id = 9879198
+            #    api_hash = '1d687eefd91f2d5154dd089423eeb858'
+            #    bot_token = '5472033464:AAH18SQ-1UmBbgh6KYC2o_EpwfapHMohJDo'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -633,7 +633,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5312605097:AAElR2O-3wykmjPgChgpkXTgmAQDlQVE0J4'
+    bot_token = '5472033464:AAH18SQ-1UmBbgh6KYC2o_EpwfapHMohJDo'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
